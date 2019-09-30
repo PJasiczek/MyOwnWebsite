@@ -1,0 +1,1150 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*index.html*/
+/*site structure*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html 
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F6F6F6;
+}
+
+div.main
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+div.main-welcome
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.main-left-part-welcome-block
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main-right-part-welcome-block
+{
+    position: absolute;
+    width: 55%;
+    height: 95%;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    background-color: rgba(196, 196, 196, 0.26);   
+}
+
+div.main-right-part-welcome-block img.img-profile
+{
+    position: absolute;
+    width: 25vw;
+    height: 30vw;
+    left: 7%;
+    bottom: 7%;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 130px;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+}
+
+div.main-left-part-welcome-block-content
+{
+    position: absolute;
+    width: 75%;
+    height: 50%;
+    bottom: 15%;
+    background-color: transparent;
+}
+
+div.main-left-part-welcome-pre-header
+{
+    width: 100%;
+    height: 5%;
+    background-color: transparent;
+    float: left;
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #000000;
+    padding: 3%;
+}
+
+div.main-left-part-welcome-post-header
+{
+    width: 100%;
+    height: 5%;
+    background-color: transparent;
+    float: left;
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 2vw; 
+    font-weight: 200;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+div.main-left-part-welcome-description
+{
+    width: 100%;
+    height: 25%;
+    background-color: transparent;
+    float: left;
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1.2vw;
+    color: #000000;
+    opacity: 0.8;
+    padding: 3%
+}
+
+div.main-left-part-welcome-btn-block
+{
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    float: left;
+    padding: 3%;
+}
+
+span.main-left-part-welcome-download
+{
+    width: 45%;
+    height: 85%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #000000;
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    color: #ffffff; 
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-left: 2%;
+}
+
+span.main-left-part-welcome-contact
+{
+    width: 45%;
+    height: 85%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    color: #000000; 
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-left: 6%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+div.main-right-part-welcome-social-media-block
+{
+    position: absolute;
+    width: 8%;
+    height: 30%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+}
+
+.fa {
+    padding: 1vw;
+    width: 1vw;
+    height: 1vw;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    margin: 1vw 0.2vw;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+    background: #000000;
+    color: white;
+}
+
+.fa-facebook-contanct {
+    background: #000000;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #000000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #000000;
+    color: white;
+}
+
+.fa-github {
+    background: #000000;
+    color: white;
+}
+
+a.fa-chevron-up:focus, a.fa-chevron-up:hover, a.fa-chevron-up:active, a.fa-chevron-up:link
+{
+    outline: 0;
+    border: none;
+    color: black;
+}
+
+a.fa-github-projects:focus
+{
+    outline: 0;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+a.fa-github-projects:visited
+{
+    outline: 0;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*language skills (index.html)*/
+
+div.main-languages-skills
+{
+    position: relative;
+    width: 100%;
+    height: 65%;
+    padding-top: 1%
+}
+
+div.main-languages-skills-header
+{
+    position: relative;
+    width: 100%;
+    height: 8%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.main-education-history-header, div.main-experience-header, div.main-projects-header, div.main-foreign-languages-header
+{
+    position: relative;
+    width: 100%;
+    height: 7%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.main-foreign-languages-header-underline, div.main-languages-skills-header-underline, div.main-education-history-header-underline, div.main-experience-header-underline, div.main-projects-header-underline, div.main-foreign-languages-header-underline
+{
+    width: 25%;
+    border-bottom: 1.5px solid black;
+}
+
+div.main-languages-skills-blocks
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    content: "";
+    display: table;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+}
+
+div.main-language-skill-block
+{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+div.main-language-skill-chart-header
+{
+    position: relative;
+    width: 77%;
+    height: 20%;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 1%;
+}
+
+
+div.main-language-skill-chart-scale
+{
+    position: relative;
+    width: 80%;
+    height: 20%;
+    background-color: #E1E0E0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: -1px 7px 11px -8px rgba(0,0,0,0.75);
+}
+
+div.main-language-skill-chart-value
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+div.main-language-skill-chart-value-pro
+{
+    width: 90%;
+}
+
+div.main-language-skill-chart-value-master
+{
+    width: 60%;
+}
+
+div.main-language-skill-chart-value-medium
+{
+    width: 40%;
+}
+
+div.main-language-skill-chart-value-beginner
+{
+    width: 20%;
+}
+
+/*education history (index.html)*/
+
+div.main-education-history
+{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(196, 196, 196, 0.26);
+    padding-top: 1%;
+}
+
+div.main-education-history-blocks
+{
+    position: relative;
+    width: 100%;
+    height: 73%;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    padding-top: 3%
+}
+
+div.main-education-history-block
+{
+    position: relative;
+    width: 36%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: transparent;
+    box-shadow: 0px 2px 23px -5px rgba(0,0,0,0.75);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div.main-education-history-block-school-name
+{
+    position: relative;
+    width: 90%;
+    height: 10%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.main-education-history-block-date
+{
+    position: relative;
+    width: 90%;
+    height: 30%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.main-education-history-block-descripion
+{
+    position: relative;
+    width: 90%;
+    height: 40%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*experience (index.html)*/
+
+div.main-experience
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    padding-top: 1%
+}
+
+div.main-experience-blocks
+{
+    position: relative;
+    width: 100%;
+    height: 83%;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    padding-top: 3%
+}
+
+div.main-experience-block
+{
+    position: relative;
+    width: 49%;
+    height: 88%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0px 2px 23px -5px rgba(0,0,0,0.75);
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+div.main-experience-block-company-name
+{
+    position: relative;
+    width: 90%;
+    height: 10%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.main-experience-block-company-location
+{
+    position: relative;
+    width: 90%;
+    height: 10%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.main-experience-block-description-header
+{
+    position: relative;
+    width: 90%;
+    height: 10%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.main-experience-block-description
+{
+    position: relative;
+    width: 90%;
+    height: 40%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*foreign languages (index.html)*/
+
+div.main-foreign-languages
+{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    padding-top: 1%;
+}
+
+div.main-foreign-languages-header
+{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.main-foreign-languages-blocks
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+
+div.main-foreign-languages-block
+{
+    position: relative;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+/*projects (index.html)*/
+
+div.main-projects
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+div.main-projects-blocks
+{
+    position: relative;
+    width: 100%;
+    height: 73%;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+div.main-projects-block
+{
+    position: relative;
+    width: 66%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0px 2px 23px -5px rgba(0,0,0,0.75);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+div.main-projects-block-projects-list
+{
+    position: relative;
+    width: 90%;
+    height: 60%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+div.main-projects-block-projects-list ul li
+{
+    padding: 1%;
+}
+
+div.main-projects-block-projects-annotation
+{
+    position: relative;
+    width: 90%;
+    height: 20%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*footer (index.html)*/
+
+div.footer
+{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+}
+
+div.footer-btn-to-start
+{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    bottom: 45%;
+    right: 5%;
+    background-color: transparent;
+    box-shadow: 0px 2px 23px -5px rgba(0,0,0,0.75);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.footer-description
+{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 25%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*menu (index.html)*/
+
+div.main div.menu
+{
+    position: absolute;
+    width: 25%;
+    height: 7%;
+    right: 7%;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    overflow: hidden;
+    opacity: 0.9;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+div.main div.menu ul.menu-list li
+{
+    list-style-type: none;
+    float: left;
+    padding: 20px;
+}
+
+div.main div.menu ul.menu-list li a
+{
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1.5vw;
+    color: #555353;  
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 3s;
+}
+
+div.main div.menu ul.menu-list li a:hover
+{
+    color: #000000;
+    border-color: #000000;
+}
+
+div.main div.menu ul.menu-list li a.menu-list-item-selected
+{
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1.5vw;
+    color: #000000;  
+    border-bottom: 1px solid #000000;
+    transition: all ease-in-out 3s;
+}
+
+/*logo (index.html)*/
+
+div.main div.main-logo
+{
+    position: absolute;
+    width: 25%;
+    height: 7%;
+    top: 7%;
+    left: 7%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+
+}
+
+div.main div.main-logo span.pre-logo-content
+{
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 2.5vw;
+    color: #787777;
+}
+
+div.main div.main-logo a
+{
+    text-decoration: none;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 2.5vw;
+    color: #000000;
+}
+
+div.main div.main-logo a:hover
+{
+    opacity: 0.7;
+    transition: opacity ease-in-out 3s;
+}
+
+/*(kontakt.html)*/
+
+
+div.main-contact
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+div.main-contact-block
+{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin-top: 15%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main-contact-block-header
+{
+    position: relative;
+    width: 90%;
+    height: 15%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.main-contact-block-email-name
+{
+    position: relative;
+    width: 90%;
+    height: 30%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.main-contact-block-btn
+{
+    position: relative;
+    width: 90%;
+    height: 30%;
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.thin-content-btn-contanct
+{
+    font-family: 'Happy Monkey', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
