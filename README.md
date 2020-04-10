@@ -1,5 +1,5 @@
 # My Own Website
-> This repository contains code of my own website page placed on [www.piotrjasiczek.pl](http://www.piotrjasiczek.pl), where you can read more about my experience in IT.
+> This repository contains code of my own website page placed on [https://piotrjasiczek.pl](https://piotrjasiczek.pl), where you can read more about my experience in IT.
 
 ## Table of contents
 * [General info](#general-info)
